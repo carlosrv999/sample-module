@@ -1,27 +1,27 @@
 variable "network_name" {
-  type = string
+  type        = string
   description = "Name of the network"
 }
 
 variable "public_subnets" {
-  type = list(string)
+  type        = list(string)
   description = "CIDR ranges for public subnets"
-  default = []
+  default     = []
 }
 
 variable "public_subnet_suffix" {
-  type = string
+  type        = string
   description = "suffix of public subnets"
-  default = "public-tf"
+  default     = "public-tf"
 }
 
 variable "region" {
-  type = string
+  type        = string
   description = "region to deploy subnets"
 }
 
 variable "create_subnets" {
-  type = bool
+  type        = bool
   description = "should we create subnets or not"
-  default = false
+  default     = false
 }
